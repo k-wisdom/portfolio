@@ -1,0 +1,16 @@
+
+/*------------ 반응형 -------------*/
+@media (min-width: 0px) and (max-width: 350px) {
+  html{font-size: 12px!important;}
+  @include remFont(12px);
+}
+
+@include mobile{
+  @include remFont(16px);
+}
+@include tablet{
+  @include remFont(13px);
+}
+@include tablet_desktop{
+  @include remFont(13px);
+}

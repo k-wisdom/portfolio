@@ -1,0 +1,159 @@
+/* Form */
+// select { padding: 0 26px 0 14px; height: 48px;background: url(../img/ico-arrow-gray-up@2x.png) no-repeat right 14px center / 10px #fff;font-size: 14px;color: #111;border: 1px solid #eee;border-radius: 3px;box-sizing: border-box;}
+input,textarea { border: 1px solid #ddd; background: #fff;vertical-align: middle;font-weight: normal;border-radius: 3px;-webkit-appearance: none;}
+input::-webkit-input-placeholder {line-height: 100%;}
+select:focus,
+textarea:focus,
+input:focus {
+    outline: none;
+    border: solid 1px #6488ff;
+}
+input[type=tel][readonly],
+input[type=text][readonly],
+input[type=password][readonly],
+input[type=email][readonly],
+input[type=search][readonly],
+input[type=tel][disabled],
+input[type=text][disabled],
+input[type=password][disabled],
+input[type=search][disabled],
+input[type=email][disabled] { background: #f2f2f2;border-color: #f2f2f2;color: #999;-webkit-appearance: none;opacity: 1;-webkit-text-fill-color: #999;-webkit-opacity: 1;}
+textarea[readonly],
+textarea[disabled] {padding: 11px;font-size: 16px;color: #666;font-weight: normal;line-height: 140%;height: 78px;background: #eaeaea;border: 1px solid #c0c0c0;}
+// input[type=number]::-webkit-inner-spin-button {  display: none}
+input[type=text],
+input[type=number],
+input[type=password] {padding: 0 14px;height: 48px;box-sizing: border-box;}
+
+input::-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+input:-ms-input-placeholder {
+    color: #b5b5b5;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+textarea:-ms-input-placeholder {
+    color: #b5b5b5;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.clear {clear: both;}
+.clear:after {content: "";display: block;clear: both;}
+button {cursor: pointer;}
+button:focus-visible {outline: none;}
+
+
+// <span class="custom_input">
+//     <input type="checkbox" id="checkAll">
+//     <label for="checkAll" class="custom_check"></label>
+// </span>
+.custom_input {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    input[type=radio],
+    input[type=checkbox] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        border: 0;
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    input[disabled] {
+        &[type=radio]~ {
+            .custom_radio {
+                color: #999;
+
+                &:before {
+                    //background-image: url(../img/btn-unselected-radio-disabled@2x.png);
+                }
+            }
+        }
+
+        &[type=radio]:checked~ {
+            .custom_radio {
+                &:before {
+                    //background-image: url(../img/btn-selected-radio-off@2x.png);
+                }
+            }
+        }
+
+        &[type=checkbox]~ {
+            .custom_check {
+                color: #aaa;
+
+                &:before {
+                    // background-image: url(../img/checkbox@2x.png);
+                }
+            }
+
+        }
+    }
+
+    input:checked~ {
+        .custom_radio:before {
+            //background-image: url(../img/btn-selected-radio@2x.png);
+        }
+
+        .custom_check:before {
+            // background-image: url(../img/checkbox-on@2x.png);
+        }
+    }
+
+    [class^=custom_] {
+        display: inline-block;
+        position: relative;
+        padding-left: 26px;
+        min-height: 20px;
+        font-size: 14px;
+        letter-spacing: -0.14px;
+        color: #111;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 1.2px;
+            width: 20px;
+            height: 20px;
+            box-sizing: border-box;
+            background: no-repeat center / 100%;
+        }
+    }
+
+    label.custom_check,label.custom_radio{display: block;}
+
+    .custom_radio:before {
+       // background-image: url(../img/btn-unselected-radio@2x.png);
+    }
+
+    .custom_check:before {
+        // background-image: url(../img/checkbox@2x.png);
+    }
+}
