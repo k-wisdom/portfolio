@@ -1,0 +1,111 @@
+
+.section_about{
+    padding-top: rem(300px); 
+    padding-bottom: rem(150px);
+    .about_con{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        column-gap: rem(80px);
+        margin-top: rem(120px);
+
+        .about_left{
+            position: relative;
+            flex-grow: 1; 
+            p{
+                margin-top: rem(50px);
+                font-size: 1rem;
+                line-height: 1.7;
+            }    
+        }
+
+        .top_text{
+            display: block;
+            font-size: rem(100px);
+            font-family: $Abril;
+            font-weight: 500;
+            line-height: 0.9;
+            white-space: nowrap;
+            span{
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                
+                &::after{
+                @include absolute;
+                z-index: -1;
+                content: '';
+                display: block;
+                width: calc(100% + 2.5rem);
+                height: 100%;
+                background: $pointColor;
+                opacity: 0.2;
+                transform: rotate(-3deg) translate(-50%,-55%);
+                }
+            }
+        }
+
+        .frame{
+            position: relative;
+            width: MIN(rem(780px), 45%);
+            img{
+                position: absolute;
+                right: -8rem;
+                top: 5%;
+                width: 31.625rem;
+                height: auto;
+                // height: rem(400px);
+                // object-fit: cover;
+                // object-position: top;
+            }
+        }
+
+        ul{
+            position: relative;
+           
+            &:before{
+                @include absolute($l:rem(-25px));
+                content: '';
+                display: inline-block;
+                width: 1px;
+                height: calc(100% - 2rem);
+                background: #000;
+            }
+            li{
+                padding: rem(20px) 0;
+                border-bottom: 1px solid #000;
+
+                &:last-of-type{
+                    border-bottom: none;
+                }
+
+                b{
+                    margin-right: rem(20px);
+                    font-family: $Abril;
+                }
+            }
+        }
+
+
+        
+
+    }
+}
+
+@keyframes morph {
+    0% {
+        // border-radius: 40% 60% 60% 40%/70% 30%;
+        border-radius: 40% 60% 60% 40%/70% 30%
+    }
+
+    to {
+        //border-radius: 40% 60%
+        border-radius: 100%;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn)
+    }
+}
