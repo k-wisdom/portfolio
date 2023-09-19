@@ -3,7 +3,7 @@ function Skill(){
     <>
     
     <div className="group_circle">
-      <h2>SKILL &amp; <i>TOOLS</i></h2>
+      <h2 className="title_h2">SKILL &amp; <i>TOOLS</i></h2>
       <div>
           <span>HTML5</span>
           <span>CSS3</span>

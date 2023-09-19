@@ -1,0 +1,86 @@
+@use '../abstracts/mixin' as *;
+@use '../abstracts/variables' as v;
+
+.section_contact{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bx_contact{
+  padding: rem(80px);
+  width: MIN(900px, calc(100% - 2.5rem));
+  box-sizing: border-box;
+  text-align: center;
+
+  .title_h2{
+    line-height: 0.9;
+    text-transform: uppercase;
+    
+  }
+
+  h2.title_h2{
+    position: relative;
+    z-index: 2;
+    &:after{
+        content: '';
+        display: inline-block;
+        margin-left: rem(10px);
+        width: rem(80px);
+        height: rem(80px);
+        border-radius: 100%;
+        background: url(../../img/ico-smile.png) no-repeat center / 100% v.$pointColor;
+        vertical-align: top;
+      }
+  }
+
+  b.title_h2{
+    display: block;
+    margin-top: rem(-40px);
+    font-family: 'Noto Sans KR', sans-serif;
+    @include textBorder($c:#000);
+    color: #fff;
+    mix-blend-mode: darken;
+  }
+}
+
+
+.contact_card{
+  margin: rem(-20px) auto 0;
+  width: rem(220px);
+  height: rem(280px);
+
+  &:hover{
+    .card_content {
+      transform: rotateY(180deg) rotate(3deg);
+    }
+  }
+
+  &:after{
+    content:'';
+    position: absolute;
+    right: -5.25rem;
+    top: rem(50px);
+    width: 4rem;
+    height: 3rem;
+    background:url(../../img/img_text_hover.png) no-repeat center / 100%;
+  }
+
+  & > div{transform: rotate(-3deg);}
+  
+  .front{
+    background: url(../../img/img_contact.jpg) no-repeat center top 0 / cover;
+  }
+  .back{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background:#fff;
+    line-height: 1.7;
+    font-size: rem(15px);
+    color: #222;
+
+    a{display: block; color: #222;}
+  }
+}

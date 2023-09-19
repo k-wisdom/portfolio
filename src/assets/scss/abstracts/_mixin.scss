@@ -75,6 +75,11 @@ $base-rem-size:16px;
     }
 }
 
+@mixin textBorder($c, $b:1) {
+    $bw: $b+px;
+    $minus : calc(-1 * $b)+px;
+    text-shadow: $bw $bw 0 $c, $bw $minus 0 $c, $minus $bw 0 $c, $minus $minus 0 $c, $bw 0px 0 $c, 0px $bw 0 $c, $minus 0px 0 $c, 0px $minus 0 $c;
+}
 
 @mixin mobile {
     @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {

@@ -2,8 +2,7 @@
     padding: rem(200px) 0;
     h2{
         margin-bottom: rem(30);
-        font-size: rem(80px);
-        font-family: $Abril
+        
     } 
 }
 
@@ -126,7 +125,7 @@
                         display: inline-block;
                         margin-bottom: rem(8px);
                         font-size: rem(20px);
-                        text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -1px 0 #000000;
+                        @include textBorder($c:#000);
                         color: #fff;
                         opacity: 0.6;
 

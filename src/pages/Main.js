@@ -1,10 +1,10 @@
-import FolderShape from '../components/FolderShape';
 import FlowText from '../components/FlowText';
 import Header from '../components/Header';
 import About from './About';
 import Career from './Career';
 import Skill from './Skill';
 import Project from './Projects';
+import Contact from './Contact';
 
 function Main(){
     return (
@@ -27,7 +27,7 @@ function Main(){
                 <section className="section_about">
                     <About/>
                 </section>
-                <FlowText val="2023 portfolio&nbsp;&nbsp;&nbsp; KIMJIHYE&nbsp;&nbsp;&nbsp; Front-end Developer&nbsp;&nbsp;&nbsp;"/>
+                <FlowText val="2023 Portfolio&nbsp;&nbsp;&nbsp; KIMJIHYE&nbsp;&nbsp;&nbsp; Front-end Developer&nbsp;&nbsp;&nbsp;"/>
                 <section className="section_project">
                     <div className="bx_con_1600">
                         <Project/>
@@ -35,22 +35,14 @@ function Main(){
                 </section>
                 <section className="section_skill">
                     <div className="bx_con_1600">
-                        <Skill />
+                        <Skill/>
                     </div>
                 </section>
-                <section className="section_career">
-                    <Career />
-                </section>
                 <section>
-                    <FolderShape title="CONTECT ME">
-                        <div className="bx_contact">
-                            <h3>Develop any website!</h3>
-                            <b>010-3011-0378</b>
-                            <b><a href="mailTo:wlgp3011@naver.com">wlgp3011@naver.com</a></b>
-                            <b>김지혜</b>
-                        </div>
-                    </FolderShape>
+                    <Career/>
                 </section>
+                
+                <Contact/>
             </div>
         </>
     )

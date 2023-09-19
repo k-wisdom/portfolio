@@ -1,6 +1,11 @@
 [class*="bx_con_"]{margin:0 auto;}
 .bx_con_1600{ width: MIN(rem(1600px), calc(100% - 5rem));}
 
+.title_h2{
+  font-size: rem(80px);
+  font-family: $Abril
+}
+
 @include mobile{
   .bx_con_1600{ width: calc(100% - 2.5rem);}
 }

@@ -3,10 +3,10 @@
 
 @import './base/reset', './base/typo', './base/common';
 
-@import './components/button', './components/form', './components/folderShape';
+@import './responsive/responsive';
+
+@import './components/button', './components/form';
 
 @import './layout/header';
-
-@import './responsive/responsive';
 
 @import './pages/mainpage', './pages/about', './pages/project', './pages/skill';

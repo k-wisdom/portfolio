@@ -1,13 +1,10 @@
 import React from 'react';
+import { breakLineFn } from '../common/util';
 
 
 function StickyBox(props){
   const data = props.content;
 
-  //줄바꿈
-  const breakLineFn = (text) => {
-    return text.split('\n').map((txt)=><>{txt}<br/></>)
-  }
   return(
     <>
       <div className="sticky_box">

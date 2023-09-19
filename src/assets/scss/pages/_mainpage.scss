@@ -32,8 +32,7 @@ $bg_color : #fff;
       color: $bg_color;
       z-index: -1;
       opacity: 0.4;
-      // text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
-      text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -1px 0 #000000;
+      @include textBorder($c:#000);
     }
     &:before{
       content: 'PORT';
@@ -74,8 +73,4 @@ $bg_color : #fff;
       // border-radius: 100%;
     }
   }
-}
-
-.section_project{
-  @include folderColor($boxColor:#dee4db, $bgColor:#becfbd);
 }

@@ -5,7 +5,7 @@ import projectsData from '../projectsData.json';
 function Project(){
   return(
     <>
-      <h2>FEATURED WORK</h2>
+      <h2 className="title_h2">FEATURED WORK</h2>
       <div className="sticky_box_wrapper">
         {
           projectsData.map((item, index) => {
