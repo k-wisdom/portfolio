@@ -1,0 +1,141 @@
+[
+  {
+    "id":1,
+    "period":"2023.03 \n~ 2023.04",
+    "proj_name":"CASTFOX",
+    "proj_desc":"회사 홈페이지 3차 리뉴얼",
+    "url":"https://www.castfox.co.kr",
+    "img_path":"assets/img/c_castfox_v3.jpg"
+  },
+  {
+    "id":2,
+    "period":"2022.10 \n~ 2022.12",
+    "proj_name":"SKT TECH ACADEMY 리뉴얼",
+    "proj_desc":"사용자, 관리자 화면 퍼블리싱",
+    "url":"https://www.skttechacademy.com",
+    "img_path":"assets/img/c_skttech_v2.jpg"
+  },
+  {
+    "id":3,
+    "period":"2022.09 \n~ 2022.10",
+    "proj_name":"서울시 전자근로계약 및 이력관리 시스템",
+    "proj_desc":"vue.js 기반 UI 컴포넌트 제작",
+    "url":"https://bcjob.eseoul.go.kr",
+    "img_path":"assets/img/c_nas.jpg"
+  },
+  {
+    "id":4,
+    "period":"2022.08",
+    "proj_name":"레드커넥트",
+    "proj_desc":"레드커넥트 앱의 관리자 웹사이트 프론트엔드 개발",
+    "url":null,
+    "img_path":"assets/img/c_redconnect.jpg"
+  },
+  {
+    "id":5,
+    "period":"2022.07",
+    "proj_name":"Happy 1.5℃",
+    "proj_desc":"앱 소개 페이지 제작",
+    "url":null,
+    "img_path":"assets/img/c_happy1.5.jpg"
+  },
+  {
+    "id":6,
+    "period":"2022.04 \n~ 2022.07",
+    "proj_name":"SKT TECH ACADEMY",
+    "proj_desc":"사용자, 관리자 웹사이트 퍼블리싱 / 프론트엔드 개발",
+    "url":"https://www.skttechacademy.com",
+    "img_path":"assets/img/c_skttech_v1.jpg"
+  },
+  {
+    "id":7,
+    "period":"2022.03 \n~ 2022.04",
+    "proj_name":"CASTFOX",
+    "proj_desc":"회사홈페이지 2차 리뉴얼",
+    "url":"https://www.castfox.co.kr",
+    "img_path":"assets/img/c_castfox_v2.jpg"
+  },
+  {
+    "id":8,
+    "period":"2022.02",
+    "proj_name":"페이퍼포켓",
+    "proj_desc":"앱 소개, 관리자 웹 제작",
+    "url":"https://play.google.com/store/apps/details?id=com.castfox.paperpocket",
+    "img_path":"assets/img/c_paperpocket.jpg"
+  },
+  {
+    "id":9,
+    "period":"2021.12",
+    "proj_name":"WisdomQR",
+    "proj_desc":"Flutter기반의 간단한 QR 스캔 앱 개발",
+    "url":"https://apps.apple.com/au/app/wisdomqr-qr-%EB%B0%94%EC%BD%94%EB%93%9C-%EC%8A%A4%EC%BA%90%EB%84%88-%EC%83%9D%EC%84%B1%EA%B8%B0/id1602349655",
+    "is_mobile":true,
+    "img_path":"assets/img/c_wisdomQR.jpg"
+  },
+  {
+    "id":10,
+    "period":"2021.10 \n~ 2021.12",
+    "proj_name":"My Shuffle",
+    "proj_desc":"블록체인 기반 간편 결제 서비스 마이셔플 앱 웹뷰 퍼블리싱",
+    "url":"https://play.google.com/store/apps/details?id=com.thehumanplus.shuffle&hl=ko-KR",
+    "is_mobile":true,
+    "img_path":"assets/img/c_hpx.jpg"
+  },
+  {
+    "id":11,
+    "period":"2021.08",
+    "proj_name":"부동산 디지털 감정평가 이력 및 데이터 관리 서비스",
+    "proj_desc":"부동산 감정평가 업무의 디지털화 및 온라인 서비스 플랫폼 웹 퍼블리싱",
+    "url":null,
+    "img_path":"assets/img/c_nipa.jpg"
+  },
+  {
+    "id":12,
+    "period":"2021.07 \n~ 2021.08",
+    "proj_name":"의료용 마약류 관리 플랫폼",
+    "proj_desc":"병원 내에서 사용되는 의료용 마약류에 대한 관리 및 보고 플랫폼 웹 퍼블리싱",
+    "url":null,
+    "img_path":"assets/img/c_kisa.jpg"
+  },
+  {
+    "id":13,
+    "period":"2021.04 \n~ 2021.07",
+    "proj_name":"happyhabit 리뉴얼",
+    "proj_desc":"happyhabit 앱 웹뷰 / 관리자 웹 / 앱 소개페이지 퍼블리싱",
+    "url":"https://www.happyhabit.co.kr",
+    "img_path":"assets/img/p_happyhabit_img.jpg"
+  },
+  {
+    "id":15,
+    "period":"2021.04 \n~ 2021.05",
+    "proj_name":"정부24 모바일",
+    "proj_desc":"정부24 모바일 웹앱 UI 컴포넌트 퍼블리싱",
+    "url":null,
+    "is_mobile":true,
+    "img_path":"assets/img/c_24.jpg"
+  },
+  {
+    "id":16,
+    "period":"2020.11",
+    "proj_name":"CASTFOX",
+    "proj_desc":"회사홈페이지 제작",
+    "url":null,
+    "img_path":"assets/img/c_castfox_v1.jpg"
+  },
+  {
+    "id":17,
+    "period":"2020.07",
+    "proj_name":"행복인플루언서",
+    "proj_desc":"웹 사이트 제작, 구글 애널리틱스 연동",
+    "url":null,
+    "img_path":"assets/img/c_happy_i.jpg"
+  },
+  {
+    "id":18,
+    "period":"2020.06 \n~ 2020.08",
+    "proj_name":"happyhabit",
+    "proj_desc":"관리자 웹 퍼블리싱, 프론트엔드 개발",
+    "url":"https://www.castfox.co.kr",
+    "img_path":"assets/img/c_happyhabit_v1.jpg"
+  }
+]
