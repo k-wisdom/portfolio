@@ -1,7 +1,10 @@
+@use '../abstracts/' as *;
+
 
 .section_about{
-    padding-top: rem(300px); 
-    padding-bottom: rem(150px);
+    padding-top: rem(200px); 
+    padding-bottom: rem(250px);
+    word-break: keep-all;
     .about_con{
         display: flex;
         justify-content: space-between;
@@ -26,23 +29,6 @@
             font-weight: 500;
             line-height: 0.9;
             white-space: nowrap;
-            span{
-                display: inline-block;
-                position: relative;
-                z-index: 1;
-                
-                &::after{
-                @include absolute;
-                z-index: -1;
-                content: '';
-                display: block;
-                width: calc(100% + 2.5rem);
-                height: 100%;
-                background: $pointColor;
-                opacity: 0.2;
-                transform: rotate(-3deg) translate(-50%,-55%);
-                }
-            }
         }
 
         .frame{
@@ -50,19 +36,20 @@
             width: MIN(rem(780px), 45%);
             img{
                 position: absolute;
-                right: -8rem;
+                right: 12%;
                 top: 5%;
-                width: 31.625rem;
+                width: 11.625rem;
                 height: auto;
                 // height: rem(400px);
                 // object-fit: cover;
                 // object-position: top;
+                background-color: #fff;
+                border: 1px solid;
             }
         }
 
         ul{
             position: relative;
-           
             &:before{
                 @include absolute($l:rem(-25px));
                 content: '';
@@ -82,30 +69,74 @@
                 b{
                     margin-right: rem(20px);
                     font-family: $Abril;
+                    font-size: rem(14px);
+                    color: #333;
                 }
             }
         }
-
-
-        
-
     }
 }
 
-@keyframes morph {
-    0% {
-        // border-radius: 40% 60% 60% 40%/70% 30%;
-        border-radius: 40% 60% 60% 40%/70% 30%
-    }
+@include mobile{
+    .section_about{
+        padding-top: rem(120px); 
+        padding-bottom: rem(130px);
+        .about_con{
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: rem(30px);
+            margin-top: 0;
 
-    to {
-        //border-radius: 40% 60%
-        border-radius: 100%;
+            .about_left{
+                p{
+                    padding: 0 rem(8px);
+                    margin-top: rem(30px);
+                    font-size: 0.92rem;
+                    line-height: 1.5;
+                }    
+            }
+
+            .top_text{
+                font-size: rem(65px);
+            }
+
+            .frame{
+                width: 100%;
+                max-width: rem(500px);
+                img{
+                    right: rem(20px);
+                    width: 7.625rem;
+                }
+            }
+
+            ul{
+                &:before{
+                    display: none;
+                }
+                li{
+                    padding: rem(15px) 0;
+                    font-size: rem(14px);
+                    b{
+                        font-size: rem(13px);
+                    }
+                }
+            }
+        }
     }
 }
 
-@keyframes spin {
-    to {
-        transform: rotate(1turn)
+@include tablet{
+    .section_about{
+        .about_con{
+            .frame{
+                width: 100%;
+                max-width: rem(500px);
+                img{
+                    right: rem(20px);
+                    width: 10.625rem;
+                }
+            }
+        }
     }
 }
