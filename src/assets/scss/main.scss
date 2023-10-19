@@ -1,5 +1,4 @@
-@import './abstracts/variables';
-@import './abstracts/mixin';
+@import './abstracts';
 
 @import './base/reset', './base/typo', './base/common';
 
@@ -9,4 +8,4 @@
 
 @import './layout/header';
 
-@import './pages/mainpage', './pages/about', './pages/project', './pages/skill';
+@import './pages/mainpage';
