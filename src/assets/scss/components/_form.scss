@@ -59,7 +59,7 @@ input[type=number] {
 .clear {clear: both;}
 .clear:after {content: "";display: block;clear: both;}
 button {cursor: pointer;}
-button:focus-visible {outline: none;}
+// button:focus-visible {outline: none;}
 
 
 // <span class="custom_input">
