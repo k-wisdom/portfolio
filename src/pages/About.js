@@ -22,7 +22,7 @@ function About(props, ref){
                   <li><b>Birth</b>97.02.24</li>
                   <li><b>Phone</b>010-3011-0378</li>
                   <li><b>E-mail</b>bnm1354@gmail.com</li>
-                  <li><b>Github</b>https://github.com/k-wisdom</li>
+                  <li><b>Github</b><a href="https://github.com/k-wisdom" target="_blank" rel="noreferrer">https://github.com/k-wisdom</a></li>
               </ul>  
               <img src={require("../assets/img/jh.png")} alt="프로필 이미지"/>      
             </div>

@@ -148,7 +148,7 @@
       >div{
         span{
           opacity: 0;
-          animation: moveUp .5s forwards;
+          animation: moveUp .3s forwards;
           &:nth-of-type(1){animation-delay: 0;}
           &:nth-of-type(2){animation-delay: .3s;}
           &:nth-of-type(3){animation-delay: 0.5s;}
@@ -247,7 +247,7 @@
 
 @include tablet{
   .section_skill{
-    margin-top: rem(100px);
-    padding-top: rem(250px);
+    margin-top: rem(0px);
+    padding-top: rem(350px);
   }
 }
