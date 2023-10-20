@@ -1,11 +1,26 @@
-@use '../abstracts/mixin' as *;
-@use '../abstracts/variables' as v;
+@use '../abstracts' as *;
 
 .section_contact{
+  margin-top: rem(300px);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.active{
+    .bx_contact h2.title_h2:after {
+      animation: popSmile .6s .3s forwards;
+    }
+  }
+}
+
+@keyframes popSmile {
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 .bx_contact{
@@ -17,7 +32,6 @@
   .title_h2{
     line-height: 0.9;
     text-transform: uppercase;
-    
   }
 
   h2.title_h2{
@@ -30,8 +44,9 @@
         width: rem(80px);
         height: rem(80px);
         border-radius: 100%;
-        background: url(../../img/ico-smile.png) no-repeat center / 100% v.$pointColor;
+        background: url(../../img/ico-smile.png) no-repeat center / 100% $pointColor;
         vertical-align: top;
+        transform: scale(0);
       }
   }
 
@@ -42,20 +57,16 @@
     @include textBorder($c:#000);
     color: #fff;
     mix-blend-mode: darken;
+
   }
 }
 
 
 .contact_card{
+  position: relative;
   margin: rem(-20px) auto 0;
   width: rem(220px);
   height: rem(280px);
-
-  &:hover{
-    .card_content {
-      transform: rotateY(180deg) rotate(3deg);
-    }
-  }
 
   &:after{
     content:'';
@@ -82,5 +93,50 @@
     color: #222;
 
     a{display: block; color: #222;}
+  }
+}
+
+@include mobile{
+  .section_contact{
+    margin-top: rem(100px);
+  }
+  .bx_contact{
+    padding: rem(60px) rem(20px);
+
+    h2.title_h2{
+
+      &:after{
+          width: rem(60px);
+          height: rem(60px);
+        }
+    }
+
+    b.title_h2{
+      margin-top: rem(-20px);
+      font-size: rem(45px);
+      mix-blend-mode:unset;
+    }
+  }
+
+  .contact_card{
+    width: rem(200px);
+    height: rem(254px);
+
+    &:after{
+      right: -3.25rem;
+      width: 3rem;
+      height: 2rem;
+    }
+  
+  }
+
+
+}
+
+@include tablet{
+  .bx_contact{
+    b.title_h2{
+      mix-blend-mode:unset;
+    }
   }
 }
