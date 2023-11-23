@@ -2,9 +2,12 @@
 $bg_color : #fff;
 .main_wrap{
   background: $bg_color;
-  transition: background-color .6s;
+  transition: background-color .2s;
   &.bg_beige{
     background: #fffbf3;
+  }
+  &.bg_dark{
+    background:#000;
   }
 }
 

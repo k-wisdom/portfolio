@@ -8,6 +8,7 @@ import Contact from './Contact';
 import { useEffect, useRef } from 'react';
 import TopBtn from '../components/TopBtn';
 import MainTop from './MainTop';
+import PersonalProject from './PersonalProject';
 
 function Main(){
     const sectionRef = useRef([]);
@@ -16,12 +17,19 @@ function Main(){
     useEffect(()=>{
         const addSectionActive = () => {
             sectionRef.current.forEach((ref, idx) => {
-                if(ref.offsetTop - 180 < window.scrollY){
+                if(ref.offsetTop - 200 < window.scrollY){
                     ref.classList.add('active');
                     if(ref.classList.contains('bg_change')){
-                        mainRef.current.classList.add('bg_beige')
+                        mainRef.current.classList.remove('bg_beige')
+                        mainRef.current.classList.remove('bg_dark')
+                        if(ref.classList.contains('_beige')){
+                            mainRef.current.classList.add('bg_beige')
+                        }else if(ref.classList.contains('_dark')){
+                            mainRef.current.classList.add('bg_dark')
+                        }
                     }else{
                         mainRef.current.classList.remove('bg_beige')
+                        mainRef.current.classList.remove('bg_dark')
                     }
                 }else{
                     if(ref.classList.contains('toggle'))
@@ -49,6 +57,7 @@ function Main(){
                 <About ref={sectionRef}/>
                 <FlowText name="txt_portfolio" val="2023 Portfolio&nbsp;&nbsp;&nbsp; KIMJIHYE&nbsp;&nbsp;&nbsp; Front-end Developer&nbsp;&nbsp;&nbsp;"/>
                 <Project ref={sectionRef}/>
+                <PersonalProject ref={sectionRef}/>
                 <Skill ref={sectionRef}/>
                 <Career ref={sectionRef}/>
                 {/* <section className="section_mockup">

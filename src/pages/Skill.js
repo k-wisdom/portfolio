@@ -4,10 +4,10 @@ import '../assets/scss/pages/_skill.scss'
 function Skill(props, ref){
 
   return(
-    <section className="section_skill bg_change" ref={skillRef => ref.current[2] = skillRef}>
+    <section className="section_skill bg_change _beige" ref={skillRef => ref.current[3] = skillRef}>
       <div className="bx_con_1400">
         <div className="group_circle">
-          <i className="annotation">* 관심분야 / 학습 중</i>
+          <i className="annotation">* 관심분야</i>
           <h2 className="title_h2">SKILL &amp; <i>TOOLS</i></h2>
           <div>
               <span>HTML5</span>

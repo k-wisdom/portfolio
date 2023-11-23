@@ -267,6 +267,108 @@
     }
 }
 
+//personal Project
+.section_p_project{
+    padding-top: rem(70px);
+    margin-top: rem(130px);
+    margin-bottom: rem(300px);
+    &.active{
+        color: #fff!important;
+        .point_text{color: #000;}
+        a{color: #fff;}
+        & * {border-color: #fff !important;}
+    }
+    
+}
+.card_list{
+    border-top: 1px solid #000;
+    margin-top: rem(50px);
+    & > li{
+        display: flex;
+        border-bottom: 1px solid #000;
+        & > div{
+            flex: 1;
+            flex-grow: 1;
+            box-sizing: border-box;
+        }
+
+        &:hover{
+            .arrow{
+                opacity: 1;
+            }
+        }
+    }
+
+    .card_content{
+        position: relative;
+        border-right:1px solid #000;
+        padding: rem(30px);
+        .title{
+            font-size: rem(40px);
+            margin-bottom: rem(20px);
+            @include textBorder($c:#fff);
+            color: #000;
+        }
+        span{
+            display: block; margin-bottom: rem(10px);
+            b{display: inline-block; width: 4.375rem;}
+        }
+        i{
+            display: inline-block;
+            font-style: normal;
+            padding: rem(5px);
+            border: 1px solid #fff;
+            font-size: rem(13px);
+            border-radius: rem(5px);
+
+            &:not(:last-of-type){
+                margin-right: rem(5px);
+            }
+        }
+
+        .desc_con{
+            margin-top: rem(30px);
+            p{
+                margin-bottom: rem(20px);
+                font-size: rem(16px);
+            }
+            li{
+                padding-left: rem(25px);
+                margin-bottom: rem(8px);
+                position: relative;
+                font-size: rem(16px);
+                line-height: 1.6;
+                word-break: keep-all;
+                &::before{
+                    content: "✔️";
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    color: #f5f5f5;
+                    font-size: rem(13px);
+                }
+            }
+        }
+    }
+
+    .card_img{
+        img{width: 100%; height: 100%; object-fit: cover;}
+    }
+    
+    .arrow{
+        opacity: 0;
+        position: absolute;
+        right: rem(40px);
+        top: rem(40px);
+        width: 2.625rem;
+        height: 2.7rem;
+        background:url(../../img/right-up.png) no-repeat center / 100%;
+        transition: opacity .3s;
+    }
+}
+
+
 @include mobile{
     .section_project{
         padding: rem(150px) 0 0;
@@ -447,6 +549,62 @@
         &:nth-of-type(4){top: calc($height * 3 + $headerHeight);}
         
     }
+
+
+    //personal Project
+    .section_p_project{
+        padding-top: rem(80px);
+        margin-top: rem(100px);
+        margin-bottom: rem(200px);
+    }
+    .card_list{
+        margin-top: rem(40px);
+        & > li{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: rem(50px);
+        }
+
+        .card_content{
+            border-right: none;
+            padding: rem(20px) 0;
+            .title{
+                font-size: rem(30px);
+                margin-bottom: rem(18px);
+            }
+            span{
+                margin-bottom: rem(8px);
+                font-size: rem(15px);
+                b{width: 4rem;}
+            }
+            i{
+                padding: rem(3px) rem(5px);
+                font-size: rem(12px);
+            }
+
+            .desc_con{
+                margin-top: rem(30px);
+                br{display: none;}
+                p{
+                    margin-bottom: rem(10px);
+                    font-size: rem(15px);
+                }
+                li{
+                    padding-left: rem(20px);
+                    margin-bottom: rem(7px);
+                    font-size: rem(15px);
+                }
+            }
+        }
+
+        .arrow{
+            right: 0;
+            top: 0;
+            width: 1.625rem;
+            height: 1.7rem;
+        }
+    }
+
 }
 
 @include tablet{

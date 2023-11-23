@@ -8,9 +8,10 @@ function Header({menuRef}){
   const navItems = [
     { idx: 0, name: 'ABOUT ME' },
     { idx: 1, name: 'FEATURED PROJECT' },
-    { idx: 2, name: 'MY SKILL' },
-    { idx: 3, name: 'WORKS' },
-    { idx: 4, name: 'CONTACT' },
+    { idx: 2, name: 'PERSONAL PROJECT' },
+    { idx: 3, name: 'MY SKILL' },
+    { idx: 4, name: 'WORKS' },
+    { idx: 5, name: 'CONTACT' },
   ]
   
   const menuFn = () => {

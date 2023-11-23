@@ -4,7 +4,7 @@ import FlipCard from '../components/FlipCard';
 
 function Contact(props, ref){
   return(
-    <section className="section_contact toggle" ref={contactRef => ref.current[4] = contactRef}>
+    <section className="section_contact toggle" ref={contactRef => ref.current[5] = contactRef}>
       <div className="bx_contact">
           <h2 className="title_h2">Contact<br/> me</h2>
           <div className="contact_card">
