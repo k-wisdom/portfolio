@@ -1,7 +1,8 @@
 import { breakLineFn } from '../common/util';
 
 export default function CardItem({content}){
-  const {title, date, url, skill, desc, desc_list, img_path, alt} = content;
+  const {title, date, url, skill, desc, desc_list, img_name, alt} = content;
+
   const handleClick = () => {
     if(url){
       window.open(url, "_blank", "noopener, noreferrer")
@@ -36,7 +37,10 @@ export default function CardItem({content}){
         </div>
       </div>
       <div className="card_img">
-        <img src={img_path} alt={alt}/>
+        {/* <img src={img_path} alt={alt}/> */}
+        {/* <img src={"../"+require(img_path)} alt={alt}/> */}
+        {/* <img src={require(`../assets/img/${img}.jpg`)} alt={alt}/> */}
+        <img src={require(`../assets/img/${img_name}`)} alt={alt}/>
       </div>
     </li>
   )

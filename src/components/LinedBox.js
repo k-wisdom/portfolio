@@ -50,15 +50,15 @@ function LinedBox(props, ref){
             <div className="lined_three_box">
               <div>
                   <span><b>CHALLANGE</b></span>
-                  <div>{data.proj_challange.map((item, index) => <p key={index}>{item}</p>)}</div>
+                  <div>{data.proj_challange.map((item, index) => <p key={index}>{breakLineFn(item)}</p>)}</div>
               </div>
               <div>
                   <span><b>SOLUTION</b></span>
-                  <div>{data.proj_solution.map((item, index) => <p key={index}>{item}</p>)}</div>
+                  <div>{data.proj_solution.map((item, index) => <p key={index}>{breakLineFn(item)}</p>)}</div>
               </div>
               <div>
                   <span><b>RESULT</b></span>
-                  <div>{data.proj_result.map((item, index) => <p key={index}>{item}</p>)}</div>
+                  <div>{data.proj_result.map((item, index) => <p key={index}>{breakLineFn(item)}</p>)}</div>
               </div>
             </div>
           }
