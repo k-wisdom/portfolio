@@ -9,6 +9,7 @@
     padding: rem(70px) rem(30px);
     white-space: nowrap;
     font-size: rem(85px);
+    color: #fff;
 
     &::before{
       content: 'My';
@@ -87,10 +88,11 @@
       width: rem(80px);
       // height: rem(80px);
       box-sizing: border-box;
-      border: 1px solid #000;
+      border: 1px solid #fff;
       text-align: center;
       font-size: 0.75em;
-      background: #fff;
+      background: #000;
+      color: #fff;
 
       &._blue{
         color: rgb(117, 117, 241);
@@ -105,7 +107,7 @@
         height: rem(6px);
         // background: $pointColor;
         // mix-blend-mode: hard-light;
-        border: 1px solid #000;
+        // border: 1px solid #000;
         background: $pointColor;
         }
 
@@ -132,7 +134,7 @@
           // background: $pointColor;
           // border: 1px solid #f5f5f5;
           // mix-blend-mode: luminosity;
-          border: 1px solid #000;
+          // border: 1px solid #000;
           background: #fff;
         }
       }
