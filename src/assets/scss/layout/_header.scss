@@ -131,17 +131,18 @@
     height: rem(45px);
   
     i{
-      margin: rem(8px) auto;
-      width: rem(30px); height: rem(2px); 
+      margin: 0.35rem auto;
+      width: 1.175rem;
+      height: 1.5px; 
     }
   }
 
   .menu_wrap{
     &.active{
       .btn_menu{
-        i:nth-of-type(1){ margin: -0.1rem 0 -1.2375rem 0.4625rem}
+        i:nth-of-type(1){ margin: 0rem 0 -1.21rem 0.7625rem;}
         i:nth-of-type(2){ margin: rem(9px);}
-        i:nth-of-type(3){ margin: -0.1rem 0 -0.1625rem 0.5rem}
+        i:nth-of-type(3){ margin: -0.1rem 0 -0.5625rem 0.75rem}
       }
     }
   }

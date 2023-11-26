@@ -3,37 +3,49 @@ import '../assets/scss/pages/_skill.scss'
 
 function Skill(props, ref){
 
+  const skillList = [
+    [
+      {name:'HTML5', img:'html5.png'},
+      {name:'CSS3', img:'css3.png'},
+      {name:'SCSS', img:'sass.png'},
+    ],
+    [
+      {name:'Javascript', img:'js.png'},
+      {name:'ES6', img:'es6.png'},
+      {name:'JQuery', img:'jquery.png'},
+      {name:'Typescript', img:'ts.png', interest:true},
+      {name:'React', img:'reactjs.png', interest:true},
+      {name:'Flutter', img:'flutter.png'},
+    ],
+    [
+      {name:'Zeplin', img:'zeplin.png'},
+      {name:'Figma', img:'figma.png'},
+      {name:'Photoshop', img:'photoshop.png'},
+    ],
+    [
+      {name:'Git', img:'git.png'},
+      {name:'Github', img:'github.png'},
+      {name:'Sourcetree', img:'sourcetree.png'},
+      {name:'Visual Studio Code', img:'vscode.png'},
+      {name:'Spring Tool Suite 4', img:'sts4.png'},
+    ]
+  ]
+
   return(
     <section className="section_skill bg_change _dark" ref={skillRef => ref.current[3] = skillRef}>
       <div className="bx_con_1400">
         <div className="group_circle">
           <i className="annotation">* 관심분야</i>
           <h2 className="title_h2">SKILL &amp; <i>TOOLS</i></h2>
-          <div>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>SCSS</span>
-          </div>
-          <div>
-              <span>Javascript</span>
-              <span>ES6</span>
-              <span>JQuery</span>
-              <span className="_blue">Typescript</span>
-              <span className="_blue">React</span>
-              <span>Flutter</span>
-          </div>
-          <div>
-              <span>Zeplin</span>
-              <span>Figma</span>
-              <span>Photoshop</span>
-          </div>
-          <div>
-              <span>Git</span>
-              <span>Github</span>
-              <span>Soucetree</span>
-              <span>Visual Studio Code</span>
-              <span>Spring Tool Suite 4</span>
-          </div>
+          {skillList.map((group,idx) => {
+            return (
+              <div key={idx}>
+                {group.map((skill) => {
+                  return <span key={skill.img} className={skill.interest && '_blue'}><img src={require(`../assets/img/${skill.img}`)} alt={skill.name}/><b>{skill.name}</b></span>
+                })}
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>
