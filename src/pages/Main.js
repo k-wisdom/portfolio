@@ -55,7 +55,7 @@ function Main(){
             <div className="main_wrap" ref={mainRef}>
                 <MainTop/>
                 <About ref={sectionRef}/>
-                <FlowText name="txt_portfolio" val="2023 Portfolio&nbsp;&nbsp;&nbsp; KIMJIHYE&nbsp;&nbsp;&nbsp; Front-end Developer&nbsp;&nbsp;&nbsp;"/>
+                <FlowText name="txt_portfolio" val="2024 Portfolio&nbsp;&nbsp;&nbsp; KIMJIHYE&nbsp;&nbsp;&nbsp; Front-end Developer&nbsp;&nbsp;&nbsp;"/>
                 <Project ref={sectionRef}/>
                 <PersonalProject ref={sectionRef}/>
                 <Skill ref={sectionRef}/>

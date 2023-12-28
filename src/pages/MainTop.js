@@ -28,7 +28,7 @@ function MainTop(){
     <section className="section_main_top">
         <div className="main_top">
             <h1>PORTFOLIO</h1>
-            <span className="title_desc">Front-end Developer / 2023</span>
+            <span className="title_desc">Front-end Developer / 2024</span>
             <div className="bg_frame_wrap">
               <div className="bg_frame bx_con_1400"><div className="bg"></div></div>
               <div className="down_arrow"><span className="hide">scroll down</span></div>

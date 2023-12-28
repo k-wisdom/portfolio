@@ -6,7 +6,7 @@
     "url":null,
     "skill":["React.js","SCSS","HTML5"],
     "desc":"React.js를 사용한 개인 포트폴리오 웹사이트",
-    "desc_list":["useEffect, useRef 등 리액트 Hook사용","styled-component 사용","intersection observer를 이용한 동영상 재생 제어 처리","다양한 인터렉션 추가"],
+    "desc_list":["useEffect, useRef 등 리액트 Hook 사용","styled-component 사용","intersection observer를 이용한 동영상 재생 제어 처리","다양한 인터렉션 추가"],
     "img_name":"pp_portfolio.jpg",
     "alt":"포트폴리오 대표 이미지"
   },
@@ -16,8 +16,8 @@
     "date":"2023.10.24 ~ 2023.11.22",
     "url":"http://culturalevent.dothome.co.kr",
     "skill":["React.js","Typescript","SCSS","HTML5"],
-    "desc":"서울 공공데이터 오픈API '서울시 문화행사 정보'를 활용한 \n 문화 행사 정보를 얻을 수 있는 웹 사이트 제작 ",
-    "desc_list":["자체 Pagination 개발","customHook, useContext 등 리액트 Hook사용","Axios 사용한 API 연동","styled-component 사용","통합된 문화행사 정보를 데이터 가공을 통해 카테고리별, \n진행중/예정된/종료된 행사로 구분하여 표시","데이터 검색 페이지 제작","상세페이지에서 목록으로 이동 시, 스크롤 위치나 검색상태가 유지되도록 처리"],
+    "desc":"서울 공공데이터 오픈 API '서울시 문화행사 정보'를 활용한 \n 문화 행사 정보를 얻을 수 있는 웹 사이트 제작 ",
+    "desc_list":["자체 Pagination 개발","customHook, useContext 등 리액트 Hook 사용","Axios 사용한 API 연동","styled-component 사용","통합된 문화행사 정보를 데이터 가공을 통해 카테고리별, \n진행 중/예정된/종료된 행사로 구분하여 표시","데이터 검색 페이지 제작","상세 페이지에서 목록으로 이동 시, 스크롤 위치나 검색 상태가 유지되도록 처리"],
     "img_name":"pp_cultural.jpg",
     "alt":"서울시 문화행사 웹사이트 대표 이미지"
   }
