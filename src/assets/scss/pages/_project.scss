@@ -349,6 +349,7 @@
                     font-size: rem(13px);
                 }
             }
+          
         }
     }
 
@@ -556,6 +557,8 @@
         padding-top: rem(80px);
         margin-top: rem(100px);
         margin-bottom: rem(200px);
+
+        .card_list .card_content .desc_con br{display: block;}
     }
     .card_list{
         margin-top: rem(40px);
