@@ -16,14 +16,14 @@ function LinedBox(props, ref){
         </div>
         <div className="lined_box_right">
           <div className="lined_video_wrap">
-            <Video src={data.video_path}/>
+            <Video src={data.video_path} poster={data.poster}/>
           </div>
           <div className="lined_box_content">
             <div className="content_text">
               {
                 data.desc_list.map((item, index) => {
                   if(data.desc_list.length > 1){
-                    return <React.Fragment key={index}><span className="degree">{index+1}차</span><ul>{item.map((txt, index) => <li key={index}>{txt}</li>)}</ul></React.Fragment>
+                    return <React.Fragment key={index}><span className="degree">{index+1}차 {index >= 1 && '리뉴얼'}</span><ul>{item.map((txt, index) => <li key={index}>{txt}</li>)}</ul></React.Fragment>
                   }else{
                     return <ul key={index}>{item.map((txt, index) => <li key={index}>{txt}</li>)}</ul>
                   }

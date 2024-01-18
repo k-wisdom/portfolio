@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-function Video({src}){
+function Video({src, poster}){
 
   // video intersectionObserver 추가
   const videoRef = useRef(null);
@@ -37,7 +37,13 @@ function Video({src}){
   }, [])
 
   return(
-    <video preload="true" autoPlay muted playsInline ref={videoRef} className={"observerItem"} onClick={(e) => e.preventDefault()}>
+    <video 
+      preload="true" 
+      autoPlay muted playsInline 
+      ref={videoRef} className={"observerItem"} 
+      onClick={(e) => e.preventDefault()}
+      poster={poster}
+      >
       <source src={src.webm} type="video/webm"></source>
       <source src={src.mp4} type="video/mp4"></source>
     </video>
